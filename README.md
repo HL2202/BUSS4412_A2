@@ -12,6 +12,10 @@ permno_gvkey_dictionary.npy is a dictionary file produced within the ff3_vF.ipyn
 
 BE-ME_Breakpoints.csv is a file which adds the Fama French breakpoints for comparison in Question 1
 
-DFF_BE_With_Nonindust.txt is the 
+DFF_BE_With_Nonindust.txt is the Ken French data for the historical book equity values for stocks from 1926. This txt file contains the raw, unprocessed data from the website before any cleaning is performed.
 
-cleaning.ipynb processes and cleans the DFF_BE_With_Nonindust.txt
+DFF_BE_With_Nonindust_Cleaned_with_gvkey.csv is the cleaned dataset for DFF_BE_With_Nonindust.txt, which is arranged in a way such that the data can be merged with the CRSP and Compustat data for market equity and book equity. 
+
+[usa]_[be_me]_[monthly]_[ew].csv, [usa]_[be_me]_[monthly]_[vw].csv and [usa]_[be_me]_[monthly]_[vw_cap].csv are the three datasets from the JKP US Book-to-Market factor, for equal-weighted, value-weighted and capped value-weighted factors respectively, which will be used in Question 4 for comparison.
+
+cleaning.ipynb processes and cleans the DFF_BE_With_Nonindust.txt. 
