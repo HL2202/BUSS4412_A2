@@ -1,14 +1,14 @@
 # BUSS4412_A2
 
-This github repository is used to store the code for BUSS4412 assignment 2 with all of the required input files, any processed files which were performed along the way.
+This github repository is used to store the code for BUSS4412 assignment 2 with all of the required input files, and any processed files which were created along the way.
 
 The main code is ff3_vF.ipynb. This code contains all of the steps used to solve questions 1 to 4.
 
 The files are organised as follows:
 
-ff3_vF.ipynb produces the results and performs all of the analysis.
+ff3_vF.ipynb produces the results and performs all of the analysis. It also reads in all of the other csv files in the repository.
 
-permno_gvkey_dictionary.npy is a dictionary file produced within the ff3_vF.ipynb code. It is a file designed to match permnos with gvkeys which will be used to assign a gvkey to all of the stocks in the historical book equity Ken French data from 1926 using the permnos.
+permno_gvkey_dictionary.npy is a dictionary file produced within the ff3_vF.ipynb code. It is a file designed to match permnos with gvkeys which will be used to assign a gvkey to all of the stocks in the historical book equity Ken French data from 1926.
 
 BE-ME_Breakpoints.csv is a file which adds the Fama French breakpoints for comparison in Question 1.
 
@@ -16,7 +16,7 @@ DFF_BE_With_Nonindust.txt is the Ken French data for the historical book equity 
 
 DFF_BE_With_Nonindust_Cleaned_with_gvkey.csv is the cleaned dataset for DFF_BE_With_Nonindust.txt, which is arranged in a way such that the data can be merged with the CRSP and Compustat data for market equity and book equity. 
 
-[usa]_[be_me]_[monthly]_[ew].csv, [usa]_[be_me]_[monthly]_[vw].csv and [usa]_[be_me]_[monthly]_[vw_cap].csv are the three datasets from the JKP US Book-to-Market factor, for equal-weighted, value-weighted and capped value-weighted factors respectively, which will be used in Question 4 for comparison.
+[usa]_[be_me]_[monthly]_[ew].csv, [usa]_[be_me]_[monthly]_[vw].csv and [usa]_[be_me]_[monthly]_[vw_cap].csv are the three datasets from the JKP US Book-to-Market factor, for equal-weighted, value-weighted and capped value-weighted factors respectively, which will be used in Question 4 for comparison with our HML factor.
 
 cleaning.ipynb processes and cleans the DFF_BE_With_Nonindust.txt. This code reads in permno_gvkey_dictionary.npy which is produced from the ff3_vF.ipynb code and performs a set of cleaning and reorganising operations to create the DFF_BE_With_Nonindust_Cleaned_with_gvkey.csv file. This file will then be inputted into the ff3_vF.ipynb in the step which will merge the CRSP and Compustat datasets with the historical book equity data from the Ken French website based on the permno and gvkey of the stocks.
 
