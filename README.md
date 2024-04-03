@@ -18,4 +18,6 @@ DFF_BE_With_Nonindust_Cleaned_with_gvkey.csv is the cleaned dataset for DFF_BE_W
 
 [usa]_[be_me]_[monthly]_[ew].csv, [usa]_[be_me]_[monthly]_[vw].csv and [usa]_[be_me]_[monthly]_[vw_cap].csv are the three datasets from the JKP US Book-to-Market factor, for equal-weighted, value-weighted and capped value-weighted factors respectively, which will be used in Question 4 for comparison.
 
-cleaning.ipynb processes and cleans the DFF_BE_With_Nonindust.txt. 
+cleaning.ipynb processes and cleans the DFF_BE_With_Nonindust.txt. This code reads in permno_gvkey_dictionary.npy which is produced from the ff3_vF.ipynb code and performs a set of cleaning and reorganising operations to create the DFF_BE_With_Nonindust_Cleaned_with_gvkey.csv file. This file will then be inputted into the ff3_vF.ipynb in the step which will merge the CRSP and Compustat datasets with the historical book equity data from the Ken French website based on the permno and gvkey of the stocks.
+
+The old folder incorporates the previous versions of the ff3_vF.ipynb, having saved down for important moments, as well as old outputs from the cleaning code.
