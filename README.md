@@ -6,11 +6,11 @@ The main code is ff3_vF.ipynb. This code contains all of the steps used to solve
 
 The files are organised as follows:
 
-ff3_vF.ipynb produces the results and performs all of the analysis
+ff3_vF.ipynb produces the results and performs all of the analysis.
 
-permno_gvkey_dictionary.npy is a dictionary file produced within the ff3_vF.ipynb code. It is a file designed to match permnos with gvkeys which will be used to assign a gvkey to all of the stocks in the historical book equity Ken French data from 1926 using the permnos
+permno_gvkey_dictionary.npy is a dictionary file produced within the ff3_vF.ipynb code. It is a file designed to match permnos with gvkeys which will be used to assign a gvkey to all of the stocks in the historical book equity Ken French data from 1926 using the permnos.
 
-BE-ME_Breakpoints.csv is a file which adds the Fama French breakpoints for comparison in Question 1
+BE-ME_Breakpoints.csv is a file which adds the Fama French breakpoints for comparison in Question 1.
 
 DFF_BE_With_Nonindust.txt is the Ken French data for the historical book equity values for stocks from 1926. This txt file contains the raw, unprocessed data from the website before any cleaning is performed.
 
